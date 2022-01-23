@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="runtime">
+  <id>__APP_ID__</id>
+  <metadata_license>CC0</metadata_license>
+  <project_license>MIT</project_license>
+  <name>Sparkle-CDM</name>
+  <summary>Sparkle-CDM</summary>
+  <releases>
+    <release version="__VERSION__" date="__VERSION_DATE__"/>
+  </releases>
+  <description>
+    <p>
+      This is a test.
+    </p>
+  </description>
+  <url type="homepage">https://github.com/sparkle-cdm/sparkle-cdm/</url>
+</component>
+
