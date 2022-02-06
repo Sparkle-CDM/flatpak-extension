@@ -45,6 +45,7 @@ sources:
 - kind: git_tag
   url: https://github.com/Sparkle-CDM/sparkle-cdm.git
   track: main
-  ref: d36516479b4eb2bcda9e584e50e3cde2941d6316
+  track-tags: false
+  ref: 72c4035f10fd4e4a91d3fde53465b33427f8fe0a
 - kind: local
   path: files/sparkle-cdm/appdata.template
