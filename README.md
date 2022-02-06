@@ -8,17 +8,17 @@ If you have [BuildStream](https://buildstream.build/) installed already:
 make final-repo
 ```
 
-Otherwise, to build from a toy container with [Toolbx](https://containertoolbx.org), first create the toolbox:
+Otherwise, setup pipenv:
 
 ```shell
-podman build -t sparkle-cdm:scv1 .
-toolbox -y create -c sparkle-cdm-v1 --image sparkle-cdm:scv1
+pip3 install --user -U pipenv
+pipenv install
 ```
 
 Then build the repo:
 
 ```shell
-make BST_BIN="toolbox run -c sparkle-cdm-v1 bst" final-repo
+make BST_BIN="pipenv run bst" final-repo
 ```
 
 ## Install
@@ -31,3 +31,4 @@ flatpak install org.freedesktop.Platform.sparkle-cdm
 
 The extension will then be enabled when running in the context of the
 `org.webkit.Sdk` and `org.webkit.Platform` runtimes.
+
